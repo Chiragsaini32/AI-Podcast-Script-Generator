@@ -2,12 +2,8 @@
 # Python + LangChain + Gemini API
 
 # Step 1: Install important modules
-# Run these commands in terminal:
-# pip install streamlit
 # pip install langchain
 # pip install langchain-google-genai
-# pip install python-docx
-# pip install reportlab
 
 # Step 2: Load all modules
 import streamlit as st
