@@ -1,5 +1,5 @@
 # AI Podcast Script Generator
-# Python + LangChain + Gemini + Streamlit
+# Python + LangChain + Gemini API
 
 # Step 1: Install important modules
 # Run these commands in terminal:
@@ -27,11 +27,9 @@ st.set_page_config(
 )
 
 st.title("🎙️ AI Podcast Script Generator")
-st.write("Generate structured podcast scripts using Python, LangChain and Gemini.")
+st.write("Generate structured podcast scripts - .")
 
 # Step 4: Google Gemini API Key
-# For Streamlit Cloud, store the key in Streamlit Secrets.
-# If no secret is configured, the app lets you enter the key manually.
 try:
     GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY", "")
 except Exception:
@@ -47,7 +45,7 @@ if not GOOGLE_API_KEY:
 if GOOGLE_API_KEY:
 
     llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash",
+        model="gemini-3.5-flash-lite",
         google_api_key=GOOGLE_API_KEY,
         temperature=0
     )
