@@ -8,7 +8,6 @@
 # Step 2: Load all modules
 import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI
-from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet
 from io import BytesIO
