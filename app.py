@@ -12,7 +12,7 @@ import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 APP_TITLE = "AI Podcast Creator Studio"
-DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
+DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
 MAX_HISTORY = 10
 
 st.set_page_config(
